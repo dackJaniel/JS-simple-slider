@@ -1,0 +1,42 @@
+.slider-box
+    display: flex
+    justify-content: center
+    width: 900px
+    height: 600px
+    position: relative
+
+    .arrows
+        position: absolute
+        z-index: 2
+        width: 100%
+        height: 100%
+
+        .arrow
+            position: absolute
+            background-color: white
+            padding: 10px
+            border-radius: 100%
+            top: 50%
+            transform: translateY(-50%)
+            width: 20px
+            height: 20px
+
+            &:hover
+                background-color: lightgray
+                cursor: pointer
+                transition: background-color 250ms
+
+            &-left
+                left: 10px
+
+            &-right
+                right: 10px
+
+    .slider-img
+        display: none
+        width: 100%
+        height: 100%
+        object-fit: cover
+
+        &-show
+            display: block
